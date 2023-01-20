@@ -1,0 +1,62 @@
+/* || Utilities */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #F7C85A;
+    border: 1px solid #F7C85A;
+    border-radius: 5.25px;
+    font-size: 1.6rem;
+    padding: 8px 17px;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* || Hero Section */
+
+header {
+    height: 100vh;
+    background-color: #0D4A31;
+    background-image: url('./icons/BACKGROUND\ 1.svg');
+    background-position: right top -1vw;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.logo h1{
+    font-size: 2.143rem;
+}
+
+nav {
+    padding: 5rem 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 4vw;
+}
+
+
+
