@@ -9,8 +9,10 @@
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
+    color: #0D4A31;
+    font-weight: bold;
 }
 
 li {
@@ -37,12 +39,18 @@ img {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    html {
+      font-size: 40%;
+    }
+}
+
 /* || Hero Section */
 
 header {
     color: #FFFFFF;
-    background-color: #0D4A31;
-    /*background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%);*/
+    background-color: #0D4A31; 
+    /* background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%); */
     background-image: url('./icons/BACKGROUND\ 1.svg');
     background-position: right top -1vw;
     background-repeat: no-repeat;
@@ -61,6 +69,45 @@ nav ul li {
     display: inline-block;
     margin-left: 4vw;
 }
+
+nav box-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+    .logo {
+        align-self: flex-start;
+    }
+
+    nav box-icon {
+        position: absolute;
+        display: block;
+        right: 5%;
+    }
+
+    nav ul {
+        display: none;
+        align-self: flex-start;
+        background: #FFFFFF;
+        width: 100%;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a {
+        color: #2B2B31;
+    }
+}
 /* || Navbar End*/
 
 .hero {
@@ -70,27 +117,28 @@ nav ul li {
 
 .hero-text {
     padding-left: 4vw;
-    flex-basis: 45%;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
 }
 .hero-img {
-    flex-basis: 55%;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
+    width: auto;
+    position: relative;
 }
 
 .hero h1 {
-    width: 80%;
+    width: 65%;
     font-size: 5.2rem;
     line-height: 6.5rem;
     flex-grow: 0.5;
+    color: #FFFFFF
 }
 
-.hero-img{
-    width: auto
-}
 .hero p {
+    width: 85%;
     font-size: 1.6rem;
     line-height: 3.5rem;
     flex-grow: 1;
@@ -118,4 +166,107 @@ nav ul li {
 
 .small-images img {
     margin-right: 1.6rem;
+}
+.hero-icons{
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#earth {
+    left: 55%;
+}
+
+#lock {
+    top: 22%;
+    left: 7%;
+}
+
+#star {
+    top: 30%;
+    right: 12%;
+}
+
+#qualified {
+    position: absolute;
+    top: 55%;
+    left: 12%;
+}
+
+#small-text {
+    position: absolute;
+    top: 60%;
+    right: 6%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .hero-text, .hero-img {
+        flex: 1 1 0;
+        gap: 2vw;
+    }
+
+    .hero-text h1, .hero-text p {
+        width: auto;
+    }
+
+    .hero-img img{
+        max-width: 100%;
+    }
+
+    .small-images img {
+        max-width: 30%;
+    }
+
+    #qualified {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+    }
+
+}
+ 
+/* || Hero Section End */
+
+/* || Card Section */
+.policies {
+    padding: 15rem 13vw;
+}
+
+.policies h2 {
+    font-size: 3.2rem;
+}
+
+.row {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.policy {
+    flex-basis: 30%;
+    padding-top: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.policy h3 {
+    font-size: 2.4rem;
+    padding: 0 3rem;
+}
+
+.policy p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #4F4F4F;
+    padding: 0 3rem;
+    opacity: 0.6;
 }
