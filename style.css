@@ -55,6 +55,13 @@ hr {
     width: 65px;
 }
 
+.about{
+    display: flex;
+    margin: 15rem 13vw;
+    justify-content: space-between;
+}
+
+
 @media (max-width: 768px) {
     html {
       font-size: 40%;
@@ -257,14 +264,11 @@ nav box-icon {
 .policies h2 {
     font-size: 3.2rem;
 }
-
 .row {
-    margin: 2rem 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2rem;
 }
-
 .policy {
     flex-basis: 30%;
     margin-top: 4.2rem;
@@ -332,11 +336,6 @@ nav box-icon {
 /* || Card Section End */
 
 /* || About Section */
-.about {
-    display: flex;
-    margin: 15rem 13vw;
-    justify-content: space-between;
-}
 
 .about-right, .about-left {
     flex-basis: 45%;
@@ -410,10 +409,20 @@ nav box-icon {
     padding-top: 25%;
 }
 
+.about-left img {
+    width: 85%;
+    height: 44.7rem;
+    align-self: flex-end;
+}
+
 @media only screen and (max-width: 425px) {
     .about {
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
     }
+    .about-left img {
+        width: 100%;
+    }
+
 }
 
