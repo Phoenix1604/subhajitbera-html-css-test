@@ -57,14 +57,14 @@ hr {
 
 .about{
     display: flex;
-    margin: 15rem 13vw;
+    padding: 15rem 13vw;
     justify-content: space-between;
 }
 
 
 @media (max-width: 768px) {
     html {
-      font-size: 40%;
+      font-size: 50%;
     }
 }
 
@@ -257,7 +257,7 @@ nav box-icon {
 
 /* || Card Section */
 .policies {
-    margin: 15rem 13vw;
+    padding: 15rem 13vw;
     position: relative;
 }
 
@@ -415,7 +415,7 @@ nav box-icon {
     align-self: flex-end;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
     .about {
         flex-direction: column;
         gap: 3rem;
@@ -425,4 +425,98 @@ nav box-icon {
     }
 
 }
+/* || About Section  End*/
+
+/* || Review Section */
+.review-section {
+    text-align: center;
+    padding: 10rem 13vw;
+    background-image: url('./images/review-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    gap: 4.8rem;
+    padding-top: 4.2rem;
+    flex-wrap: wrap;
+}
+
+.review {
+    flex-basis: 30%;
+}
+
+.review p {
+    line-height: 4.5rem;
+    opacity: 0.6;
+}
+
+.review-section hr {
+    position: absolute;
+    left: 47%;
+}
+
+@media only screen and (max-width: 430px) {
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review p {
+        opacity: 1;
+    }
+    
+}
+
+footer {
+    background-color: #0D4A31;
+}
+
+.two-column {
+    padding: 15rem 13vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-column-cols {
+    flex-basis: 45%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+}
+
+.description{
+    width: 85%;
+    color: #FFFFFF;
+}
+
+.contact-content {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.icon {
+    border-radius: 50%;
+    background: linear-gradient(132.41deg, #1F8058 15.91%, #0D4A31 88.35%);
+    justify-self: center;
+    width: 50%;
+    height: 60%;
+    display: flex;
+}
+
+.icon img{
+    margin: auto;
+}
+
 
