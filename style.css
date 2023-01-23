@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap');
-
 /* || Utilities */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     color: #0D4A31;
     font-weight: bold;
 }
@@ -46,7 +44,7 @@ button {
     border: 1px solid #F7C85A;
     border-radius: 5.25px;
     font-size: 1.6rem;
-    padding: 8px 17px;
+    padding: 2.4rem 3.7rem;
     text-transform: uppercase;
 }
 
@@ -68,19 +66,11 @@ hr {
     justify-content: space-between;
 }
 
-
-@media (max-width: 768px) {
-    html {
-      font-size: 50%;
-    }
-}
-
 /* || Hero Section */
 
 header {
     color: #FFFFFF;
     background-color: #0D4A31; 
-    /* background: linear-gradient(130.41deg, #1F8058 -48.15%, #0D4A31 64.12%); */
     background-image: url('./icons/BACKGROUND\ 1.svg');
     background-position: right top -1vw;
     background-repeat: no-repeat;
@@ -104,40 +94,7 @@ nav box-icon {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
-    nav {
-        position: relative;
-        flex-direction: column;
-    }
-    .logo {
-        align-self: flex-start;
-    }
 
-    nav box-icon {
-        position: absolute;
-        display: block;
-        right: 5%;
-    }
-
-    nav ul {
-        display: none;
-        align-self: flex-start;
-        background: #FFFFFF;
-        width: 100%;
-    }
-
-    .showmenu {
-        display: block;
-    }
-
-    nav ul li {
-        display: block;
-        padding: 2% 0;
-    }
-    nav ul li a {
-        color: #2B2B31;
-    }
-}
 /* || Navbar End*/
 
 .hero {
@@ -167,25 +124,10 @@ nav box-icon {
     color: #FFFFFF
 }
 
-.hero p {
-    width: 85%;
-    flex-grow: 1;
-}
-.btn {
-    flex-grow: 1;
-}
 .btn button {
-    font-size: 1.4rem;
     margin-right: 2.4rem;
-    padding: 2.4rem 3.7rem;
     font-weight: 700;
     color: #2B2B31;
-}
-
-#watch-video{
-    color: #FFFFFF;
-    border: none;
-    background: transparent;
 }
 
 .small-images {
@@ -201,75 +143,12 @@ nav box-icon {
     border-radius: 50%;
     padding: 8px;
 }
-
-#earth {
-    left: 55%;
-}
-
-#lock {
-    top: 22%;
-    left: 7%;
-}
-
-#star {
-    top: 30%;
-    right: 12%;
-}
-
-#qualified {
-    position: absolute;
-    top: 55%;
-    left: 12%;
-}
-
-#small-text {
-    position: absolute;
-    top: 60%;
-    right: 6%;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        gap: 2vw;
-    }
-
-    .hero-text, .hero-img {
-        flex: 1 1 0;
-        gap: 2vw;
-    }
-
-    .hero-text h1, .hero-text p {
-        width: auto;
-    }
-
-    .hero-img img{
-        max-width: 100%;
-    }
-
-    .small-images img {
-        max-width: 30%;
-    }
-
-    #qualified {
-        position: absolute;
-        top: 50%;
-        left: 12%;
-    }
-
-}
- 
 /* || Hero Section End */
 
 /* || Card Section */
 .policies {
     padding: 15rem 13vw;
     position: relative;
-}
-
-.policies h2 {
-    font-size: 3.2rem;
 }
 .row {
     display: flex;
@@ -306,40 +185,10 @@ nav box-icon {
     font-weight: 500;
     color: #2B2B31;
     position: absolute;
-    left: 37%;
+    left: 42%;
     margin-top: 4.2rem;
 }
 
-@media only screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    .policy img {
-        height: 45vw;
-    }
-
-    .policy h3 {
-        font-size: 3rem;
-    }
-
-    .policy p {
-        font-size: 2rem;
-    }
-
-    .policies button {
-        left: 30%;
-    }
-    
-}
-
-@media only screen and (max-width: 425px) {
-    .policies button {
-        left: 20%;
-    }
-}
 /* || Card Section End */
 
 /* || About Section */
@@ -422,23 +271,13 @@ nav box-icon {
     align-self: flex-end;
 }
 
-@media only screen and (max-width: 430px) {
-    .about {
-        flex-direction: column;
-        gap: 3rem;
-    }
-    .about-left img {
-        width: 100%;
-    }
-
-}
 /* || About Section  End*/
 
 /* || Review Section */
 .review-section {
     text-align: center;
     padding: 10rem 13vw;
-    background-image: url('./images/review-bg.png');
+    background-image: url('./images/review-bg.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -466,18 +305,6 @@ nav box-icon {
     position: absolute;
     left: 47%;
 }
-
-@media only screen and (max-width: 430px) {
-    .reviews {
-        flex-direction: column;
-    }
-
-    .review p {
-        opacity: 1;
-    }
-    
-}
-
 /* || Review Section End*/
 
 /* || Footer Section */
@@ -557,6 +384,13 @@ footer {
 
 input {
     height: 4.8rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+textarea{
+    font-size: 1.5rem;
+    padding-left: 1rem;
 }
 
 ::placeholder{
@@ -570,24 +404,4 @@ form button {
     color: #FFFFFF;
     border-radius: 5px;
     border-color: #6C74F4;
-}
-
-@media only screen and (max-width: 430px) {
-    .two-column {
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .icon {
-        width: 80%;
-        height: 50%;
-    }
-
-    input {
-        height: 4rem;
-    }
-
-    textarea{
-        height: 10rem;
-    }
 }

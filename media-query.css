@@ -1,0 +1,151 @@
+/* || Utilities */
+@media (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+}
+/* || Navbar */
+@media only screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+    .logo {
+        align-self: flex-start;
+    }
+
+    nav box-icon {
+        position: absolute;
+        display: block;
+        right: 5%;
+    }
+
+    nav ul {
+        display: none;
+        align-self: flex-start;
+        background: #FFFFFF;
+        width: 100%;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a {
+        color: #2B2B31;
+    }
+}
+
+/* || Header */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .hero-text, .hero-img {
+        flex: 1 1 0;
+        gap: 2vw;
+    }
+
+    .hero-text h1, .hero-text p {
+        width: auto;
+    }
+
+    .hero-img img{
+        max-width: 100%;
+    }
+
+    .small-images img {
+        max-width: 30%;
+    }
+
+    #qualified {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+    }
+
+}
+
+/* || policies */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .policy img {
+        height: 45vw;
+    }
+
+    .policy h3 {
+        font-size: 3rem;
+    }
+
+    .policy p {
+        font-size: 2rem;
+    }
+
+    .policies button {
+        left: 30%;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .policies button {
+        left: 20%;
+    }
+}
+
+/* || about */
+@media only screen and (max-width: 430px) {
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .about-left img {
+        width: 100%;
+    }
+
+}
+
+/* || review */
+@media only screen and (max-width: 430px) {
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review p {
+        opacity: 1;
+    }
+    
+}
+
+/* || footer */
+
+@media only screen and (max-width: 430px) {
+    .two-column {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .icon {
+        width: 80%;
+        height: 50%;
+    }
+
+    input {
+        height: 4rem;
+    }
+
+    textarea{
+        height: 10rem;
+    }
+}

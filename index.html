@@ -5,63 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media-query.css" media="(max-width: 768px)">
+    <!--Google fonts-->
+    <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <title>Subhajit</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="./images/Insurnce.png" alt="">
+                <img src="./images/Insurnce.webp" alt="Logo">
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Insurance Services</a></li>
-                <li><button>Sign In</button></li>
+                <li><button style="text-transform: none; padding: 8px 17px;">Sign In</button></li>
             </ul>
             <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon>
         </nav>
         <section class="hero">
             <div class="hero-text">
                 <h1>Are You Covered? Home, Life, & Auto Insurance.</h1>
-                <p>Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. </p>
-                <div class="btn">
+                <p style="width: 85%; flex-grow: 1;">Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. </p>
+                <div class="btn" style="flex-grow: 1;">
                     <button id="get-started">GET STARTED</button>
-                    <button id="watch-video">WATCH THE VIDEO</button>
+                    <button id="watch-video" style="color: #FFFFFF; border: none;background: transparent;">WATCH THE VIDEO</button>
                 </div>
                 <figure class="small-images">
-                    <img src="./images/hero-inline2.png" alt="">
-                    <img src="./images/hero-inline1.png" alt="">
-                    <img src="./images/hero-inline3.png" alt="">
+                    <img src="./images/hero-inline2.webp" alt="">
+                    <img src="./images/hero-inline1.webp" alt="">
+                    <img src="./images/hero-inline3.webp" alt="">
                 </figure>
             </div>
             <div class="hero-img">
-                <img src="./images/hero-image.png" alt="Hero Image">
-                <img src="./icons/earth.svg" alt="" class="hero-icons" id="earth">
-                <img src="./icons/lock.svg" alt="" class="hero-icons" id="lock">
-                <img src="./icons/star.svg" alt="" class="hero-icons" id="star">
-                <img src="./images/qualified.png" alt="" id="qualified">
-                <img src="./images/small-text.png" alt="" id="small-text">
+                <img src="./images/hero-image.webp" alt="Hero Image">
+                <img src="./icons/earth.svg" alt="" class="hero-icons" id="earth" style="left: 55%;">
+                <img src="./icons/lock.svg" alt="" class="hero-icons" id="lock" style="top: 22%;
+                left: 7%;">
+                <img src="./icons/star.svg" alt="" class="hero-icons" id="star" style="top: 30%;
+                right: 12%;">
+                <img src="./images/qualified.png" alt="" id="qualified" style="position: absolute; top: 55%; left: 12%;">
+                <img src="./images/small-text.png" alt="" id="small-text" style="position: absolute; top: 60%; right: 6%;">
             </div>
         </section>
     </header>
     <main>
         <section class = "policies">
-            <h2>Individual & Umbrella Policies</h2>
+            <h2 style="font-size: 3.2rem;">Individual & Umbrella Policies</h2>
             <hr>
             <section class="row">
                 <section class="policy">
-                    <img src="./images/life-insurance.png" alt="">
+                    <img src="./images/life-insurance.webp" alt="life insurance image" loading="lazy">
                     <h3>Life Insurance</h3>
                     <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis</p>
                 </section>
                 <section class="policy">
-                    <img src="./images/home-insurance.png" alt="">
+                    <img src="./images/home-insurance.webp" alt="home insurance image" loading="lazy">
                     <h3>Home Insurance</h3>
                     <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis</p>
                 </section>
                 <section class="policy">
-                    <img src="./images/auto-insurance.png" alt="">
+                    <img src="./images/auto-insurance.webp" alt="auto insurance image" loading="lazy">
                     <h3>Auto Insurance</h3>
                     <p>Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis</p>
                 </section>
@@ -98,7 +105,7 @@
         </section>
         <section class="about">
             <section class="about-left">
-                <img src="./images/about2.png" alt="">
+                <img src="./images/about2.webp" alt="about image" loading="lazy">
             </section>
             <section class="about-left">
                 <h2>Experienced Agents You Can Trust</h2>
@@ -133,21 +140,21 @@
             </section>
             <section class="contact-content">
                 <section class="icon">
-                    <img src="./icons/email.svg" alt="">
+                    <img src="./icons/email.svg" alt="email icon" loading="lazy">
                 </section>
                 <section class="information">
                     <h4>Email</h4>
                     <p>inte_ger@yahoo.com</p>
                 </section>
                 <section class="icon">
-                    <img src="./icons/mobile.svg" alt="">
+                    <img src="./icons/mobile.svg" alt="mobile icon" loading="lazy">
                 </section>
                 <section class="information">
                     <h4>Phone</h4>
                     <p>+62 1404 5123 12312</p>
                 </section>
                 <section class="icon">
-                    <img src="./icons/location.svg" alt="">
+                    <img src="./icons/location.svg" alt="location icon" loading="lazy">
                 </section>
                 <section class="information">
                     <h4>Address</h4>
@@ -160,7 +167,7 @@
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email Address">
                 <input type="tel" placeholder="Mobile Number">
-                <textarea cols="30" rows="20" placeholder="Message"></textarea>
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </section>
