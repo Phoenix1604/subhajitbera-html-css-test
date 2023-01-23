@@ -73,7 +73,7 @@
 }
 
 /* || policies */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 430px) {
     .row {
         flex-direction: column;
         flex-wrap: nowrap;

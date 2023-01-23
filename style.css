@@ -156,8 +156,9 @@ nav box-icon {
 }
 .row {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
+    gap: 4.5rem;
+    flex-wrap: wrap;
 }
 .policy {
     flex-basis: 30%;
