@@ -46,6 +46,7 @@ button {
     font-size: 1.6rem;
     padding: 2.4rem 3.7rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 img {
