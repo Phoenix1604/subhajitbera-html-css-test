@@ -143,6 +143,10 @@ nav box-icon {
     border-radius: 50%;
     padding: 8px;
 }
+
+#qualified {
+    position: absolute; top: 55%; left: 12%;
+}
 /* || Hero Section End */
 
 /* || Card Section */
