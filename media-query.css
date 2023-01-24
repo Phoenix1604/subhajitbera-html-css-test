@@ -140,7 +140,7 @@
 @media only screen and (max-width: 768px){
     .review-section {
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 15rem;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -156,8 +156,11 @@
 
 /* || footer */
 @media only screen and (max-width: 768px){
+    footer {
+        margin-top: -20rem;
+    }
     .two-column {
-        padding-top: 5rem;
+        padding-top: 25rem;
         padding-bottom: 5rem;
     }
 }
