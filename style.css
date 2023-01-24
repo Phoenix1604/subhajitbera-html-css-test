@@ -63,7 +63,7 @@ hr {
 
 .about{
     display: flex;
-    padding: 15rem 13vw;
+    padding: 8rem 13vw;
     justify-content: space-between;
 }
 
@@ -132,6 +132,7 @@ nav box-icon {
 }
 
 .small-images {
+    display: flex;
     flex-grow: 1;
 }
 
@@ -299,7 +300,6 @@ nav box-icon {
     justify-content: space-between;
     gap: 4.8rem;
     padding-top: 4.2rem;
-    flex-wrap: wrap;
 }
 
 .review {
