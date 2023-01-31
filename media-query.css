@@ -76,6 +76,11 @@
 }
 
 /* || policies */
+@media only screen and (max-width: 970px) {
+    .row {
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 768px){
     .policies {
         padding-top: 5rem;
